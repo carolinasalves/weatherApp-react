@@ -1,0 +1,11 @@
+h2 {
+  font-weight: 100;
+  font-size: 70px;
+}
+
+.units {
+  font-size: 20px;
+  position: relative;
+  top: -35px;
+  left: -10px;
+}

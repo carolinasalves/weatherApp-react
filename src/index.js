@@ -1,17 +1,26 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+import "./WeatherApp.css";
+import SearchForm from "./SearchForm";
+import Date from "./Date";
+import CurrentCity from "./CurrentCity";
+import CurrentTemperature from "./CurrentTemperature";
+import WeatherInfo from "./WeatherInfo";
+import OpenSource from "./OpenSource";
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+function WeatherApp() {
+  return (
+    <div className="WeatherApp">
+      <SearchForm />
+      <Date />
+      <CurrentCity />
+      <CurrentTemperature />
+      <WeatherInfo />
+      <OpenSource />
+    </div>
+  );
+}
+
+const rootElement = document.getElementById("root");
+ReactDOM.render(<WeatherApp />, rootElement);
