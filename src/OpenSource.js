@@ -8,7 +8,7 @@ export default function OpenSource() {
       <a
         target="_blank"
         rel="noopener noreferrer"
-        href="https://github.com/carolinasalves/Carolina-weather-app"
+        href="https://github.com/carolinasalves/weatherApp-react"
       >
         Open-source code
       </a>
