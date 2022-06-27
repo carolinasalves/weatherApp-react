@@ -11,7 +11,7 @@ export default function OpenSource() {
         href="https://github.com/carolinasalves/weatherApp-react"
       >
         Open-source code
-      </a>
+      </a>{" "}
       by Carolina Alves
     </div>
   );

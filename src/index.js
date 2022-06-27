@@ -1,6 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
+import "bootstrap/dist/css/bootstrap.css";
 import "./WeatherApp.css";
 import SearchForm from "./SearchForm";
 import Date from "./Date";
@@ -12,12 +13,14 @@ import OpenSource from "./OpenSource";
 function WeatherApp() {
   return (
     <div className="WeatherApp">
-      <SearchForm />
-      <Date />
-      <CurrentCity />
-      <CurrentTemperature />
-      <WeatherInfo />
-      <OpenSource />
+      <div className="container">
+        <SearchForm />
+        <Date />
+        <CurrentCity />
+        <CurrentTemperature />
+        <WeatherInfo />
+        <OpenSource />
+      </div>
     </div>
   );
 }
