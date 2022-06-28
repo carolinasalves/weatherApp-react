@@ -4,6 +4,7 @@ import axios from "axios";
 import "bootstrap/dist/css/bootstrap.css";
 import "./WeatherApp.css";
 import SearchForm from "./SearchForm";
+import FormattedDate from "./FormattedDate";
 import OpenSource from "./OpenSource";
 
 function WeatherApp() {
@@ -14,7 +15,7 @@ function WeatherApp() {
     setWeatherData({
       ready: true,
       city: response.data.name,
-      date: "Friday, 09:58",
+      date: new Date(response.data.dt * 1000),
       temperature: response.data.main.temp,
       min: response.data.main.temp_min,
       max: response.data.main.temp_max,
@@ -28,7 +29,7 @@ function WeatherApp() {
       <div className="WeatherApp">
         <div className="container">
           <SearchForm />
-          <div>{weatherData.date}</div>
+          <FormattedDate date={weatherData.date} />
           <h1>{weatherData.city}</h1>
           <h2>
             <span>☁️</span>
@@ -45,10 +46,10 @@ function WeatherApp() {
               Wind Speed: <span>{Math.round(weatherData.wind)}</span> Km/h
             </div>
           </div>
+          <footer>
+            <OpenSource />
+          </footer>
         </div>
-        <footer>
-          <OpenSource />
-        </footer>
       </div>
     );
   } else {

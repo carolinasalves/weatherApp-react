@@ -25,10 +25,10 @@
   left: -10px;
 }
 
-p {
+.WeatherApp p {
   margin: 0 auto;
 }
 
-.wind {
+.WeatherApp .wind {
   margin-bottom: 100px;
 }
