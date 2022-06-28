@@ -19,8 +19,10 @@ function WeatherApp() {
         <CurrentCity />
         <CurrentTemperature />
         <WeatherInfo />
-        <OpenSource />
       </div>
+      <footer>
+        <OpenSource />
+      </footer>
     </div>
   );
 }

@@ -5,11 +5,12 @@ import "./SearchForm.css";
 export default function SearchForm() {
   return (
     <form>
-      <div className="p-5">
+      <div className="search-form p-3">
         <input
           type="text"
           className="city m-2"
           placeholder="🔎 Enter your city"
+          autoFocus="on"
         />
         <input type="button" className="search-button" value="Search" />
         <input type="button" className="current-button m-2" value="Current" />
