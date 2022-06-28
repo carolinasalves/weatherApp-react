@@ -8,3 +8,27 @@
   max-width: 800px;
   border-radius: 5px;
 }
+
+.WeatherApp h1 {
+  font-weight: 100;
+}
+
+.WeatherApp h2 {
+  font-weight: 100;
+  font-size: 70px;
+}
+
+.WeatherApp .units {
+  font-size: 20px;
+  position: relative;
+  top: -35px;
+  left: -10px;
+}
+
+p {
+  margin: 0 auto;
+}
+
+.wind {
+  margin-bottom: 100px;
+}
