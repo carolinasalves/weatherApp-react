@@ -1,0 +1,23 @@
+.WeatherInfo h1 {
+  font-weight: 100;
+}
+
+.WeatherInfo h2 {
+  font-weight: 100;
+  font-size: 70px;
+}
+
+.WeatherInfo .units {
+  font-size: 20px;
+  position: relative;
+  top: -35px;
+  left: -10px;
+}
+
+.WeatherInfo p {
+  margin: 0 auto;
+}
+
+.WeatherInfo .wind {
+  margin-bottom: 100px;
+}
